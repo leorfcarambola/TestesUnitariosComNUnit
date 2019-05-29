@@ -31,7 +31,7 @@ namespace DemoAsserts.Tests
             var sut = new Calculadora();
 
             var resultado = sut.SomarReais(50, 50);
-
+            // Tolerância de 1%
             Assert.That(resultado, Is.EqualTo(101).Within(1).Percent);
         }
 
